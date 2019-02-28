@@ -1,0 +1,480 @@
+
+/*body*/
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background: #6BC3C8
+         
+}
+
+/*Global*/
+.container
+{
+width: 90%;
+margin: auto;
+overflow: hidden;
+
+}
+
+ ul
+ {
+margin: 0;
+padding: 0;
+ }
+
+/*Header*/
+header
+{
+border-left: green 3px solid;
+border-right: green 3px solid;
+border-top: green 3px solid;
+border-bottom: green 3px solid;
+background: rgb(66, 66, 66);
+color: bisque;
+padding-top: 30px;
+min-height: 50px;
+
+}
+
+header a
+{
+color: rgb(158, 27, 141);
+text-decoration: none;
+text-transform: uppercase;
+font-size:20px;
+ 
+}
+
+header li
+{
+   
+    display: inline;
+    padding: 0 20px 0 20px; /*top right bottom left*/    
+}
+
+header #branding /*branding is an ID*/
+{
+    float: left;
+}
+
+header #branding h1
+{
+margin: 0;
+}
+
+header nav
+{
+float: right;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+header a:hover
+{
+    color:green;
+    font-weight: bold;
+    
+}
+
+header .highlight, header .current a
+{
+    color: rgb(141, 112, 112);
+    font-weight: bold;
+}
+.current
+{
+color: darkcyan;
+
+}
+
+/*Showcase*/
+#showcase
+{
+    min-height: 400px;
+    background: url('../images/The\ Mount.jpg') no-repeat 0px -400px;
+    text-align: center;
+    color: rgb(158, 27, 141);
+    border-bottom: green 3px solid;
+    border-left: green 3px solid;
+    border-right: green 3px solid;
+    border-top: green 3px solid;
+}
+#showcase h1
+{
+    margin-top: 100px;
+    font-size:55px;
+    margin-bottom:100px;
+}
+
+#showcase p
+{
+    font-size: 40px;
+}
+#showcase2
+{
+    
+    height: 6000px;
+    background: linear-gradient(141deg, #0fb8ad 0%, #2dbbca 51%, #269cc7 65%, #29a2f3 10%);
+    text-align: center;
+    color: rgb(24, 17, 23);
+    border-bottom: rgb(53, 3, 59) 3px solid;
+    border-left: rgb(39, 12, 33) 3px solid;
+    border-right: rgb(51, 9, 40) 3px solid;
+    border-top: rgb(56, 4, 33) 3px solid;
+}
+#showcase2 h1
+{
+    margin-top: 100px;
+    font-size:45px;
+    margin-bottom:100px;
+}
+
+#showcase2 p
+{
+    font-size: 40px;
+}
+#searchBar 
+{
+    padding: 15px;
+    color: gray;
+    background: rgb(133, 67, 67);
+    
+}
+#searchBar
+{
+    float: right;
+    border-top: green 3px solid;
+    border-bottom: green 3px solid;
+    border-left: green 3px solid;
+    border-right: green 3px solid;
+    
+}
+#searchBar
+{
+    float: right;
+    margin-top: 15px;
+    position: fixed;
+}
+
+#searchBar input [type="email"]
+{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+.button_1
+{
+    height: 38px;
+    background: olive;
+    border: 5;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+    border-top: green 3px solid;
+    border-bottom: green 3px solid;
+    border-left: green 3px solid;
+    border-right: green 3px solid;
+}
+
+#boxes 
+{
+margin-top:20px;
+}
+
+#boxes .box
+{
+    float: right;
+    text-align: center;
+    width: 30;
+    padding: 10px;
+}
+#boxes .box image
+{
+    width: 90px;
+}
+
+
+/*page two*/
+div.a 
+{
+    text-align: center;
+}
+
+div.b 
+{
+    text-align: center;
+}
+
+div.d 
+{
+    text-align: center;
+} 
+div.e
+{
+    text-align: center;
+}
+
+div.c 
+{
+    text-align: center;
+} 
+table 
+{
+    border-collapse: collapse;
+    border: 2px rgb(13, 87, 74) solid;
+    font: 13px sans-serif;
+    width: 50%;  
+    margin-left: auto;
+    margin-right:auto;
+    color: #282864;                              
+}
+td {
+    border: 3px purple solid;
+    padding: 5px;
+    height:20px;
+    }
+tr {
+    text-align:center;
+    padding: 5px;
+    }
+tr:nth-child(even) {background-color: #ac6767;}
+
+
+/*page two end*/
+.center
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+    
+}
+
+footer
+{
+    padding: 20px;
+    margin-top: 20px;
+    color: green;
+    background-color:rgb(66, 66, 66);
+    text-align: center;
+    border-left: green 3px solid;
+    border-right: green 3px solid;
+    border-top: green 3px solid;
+    border-bottom: green 3px solid;
+    
+}
+.ref-bg
+{ 
+    background-image: url("../images/dunedin\ again.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-size: 2016px, 1512px;
+    
+}
+
+
+.boarder
+{
+    border-top: green 5px solid;
+    border-bottom: green 5px solid;
+    border-left: green 5px solid;
+    border-right: rgb(11, 172, 11) 5px solid;
+}
+    
+
+.foxyHover
+{
+ 
+ background-image: url("../images/foxylogo3.png");
+ 
+}
+.parallaxRef
+{
+    /* The image used */
+    background-image: url("../images/Pirongia.JPG");
+
+    /* Set a specific height */
+    min-height: 1000px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax 
+{
+    /* The image used */
+    background-image: url("../images/skytower1.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2 
+{
+    /* The image used */
+    background-image: url("../images/HamiltonGardens.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax3 
+{
+    /* The image used */
+    background-image: url("../images/The\ Mount.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax4 
+{
+    /* The image used */
+    background-image: url("../images/kiwiCropOutLine.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax5 
+{
+    /* The image used */
+    background-image: url("../images/skateparks.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax6 
+{
+    /* The image used */
+    background-image: url("../images/Brightwater_Rutherford_Monument.JPG");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax7
+{
+    /* The image used */
+    background-image: url("../images/Centre\ of\ NZCropResize.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax8 
+{
+    /* The image used */
+    background-image: url("../images/Grey\ mouth.JPG");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax9
+{
+    /* The image used */
+    background-image: url("../images/Queenstown.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax10
+{
+    /* The image used */
+    background-image: url("../images/dunedin\ again.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax11
+{
+    /* The image used */
+    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+
+    /* Set a specific height */
+    min-height: 400px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.font
+{
+ font-size: 150%;
+ font-display: bold;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+}
+
+
+
+
+
+

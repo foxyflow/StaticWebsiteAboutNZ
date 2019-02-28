@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name = "author" content = "Luke Fox student ID 30011364">
+    <title>Open_File</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="d3.v3.min.js"></script> 
+</head> 
+
+
+<body>
+   <header> 
+       <div class="container">
+           <div id="branding"> 
+               <h1><img src="./images/foxylogo3.png"style="width:55px;height:55px;"><span class="highlight">Foxyflow's</span> New Zealand Tourism Site</h1>
+                
+           </div>
+         <nav>
+                <ul>
+                   <li ><a href="index.html">Home</a></li>
+                   <li><a href="page1.html">6 Destinations</a></li>
+                   <li><a class="current" href="page2.html">Open File</a></li>
+                  <li><a href="page3.html">4 Music Videos</a></li>
+                  <li><a href="page4.html">10 images</a></li>
+                   <li><a href="page5.html">International Page</a></li>
+                   <li><a href="page6.html">Reference</a></li>
+                </ul>
+         </nav>
+       </div>
+   </header>
+
+   
+ 
+
+
+
+ <section id="showcase2">
+        <div class="container">
+            
+        <div class="e"><H1>Foxyflow's top choice for tourism around New Zealand</H1></div>
+        <div class="e"><H3>Click on the buttons for more info. or have a look at the table using Open File button below for a summary</H3></div>
+
+        <div class="parallax">
+        <p><button style="height:50px;background-color:rgb(172, 122, 122);font-size:20px" type="button" onclick="alert('Has a big thin buliding called the Skytower. You can-not miss it if you look up in Auckland. If you go up the top. There is a glass floor to walk on outside ... scary')">Auckland</button></p>
+        </div>
+        
+        
+        <div class="parallax2">   
+                <p><button style="height:50px;background-color:rgb(172, 122, 122);font-size:20px" type="button" onclick="alert('Hamilton has a massive beautiful garden with all kinds of plants and flowers')">Hamilton</button></p>
+                </div>
+
+                
+                <div class="parallax3">  
+                        <p><button style="height:50px;background-color:rgb(172, 122, 122);font-size:20px" type="button" onclick="alert('This extinct, 232m-tall volcano offers jogging trails & views of the city & the harbor. Apparently it is 2.351559 million years')">Mount Maunganui</button></p>
+                        </div>
+
+                        <div class="parallax4"> 
+                                <p><button style="height:50px;background-color:rgb(172, 122, 122);font-size:20px" type="button" onclick="alert('Te Puke is New Zealand’s kiwifruit capital and the horticultural hub of our coastal region. An enormous fiberglass kiwifruit slice towers over SH2 on the outskirts of Te Puke and if you’re driving by it’s a fun place to stop and take a photograph. Climb the internal stairway to the very top and look down over the green countryside below while you smile for the camera.')">Te Puke</button></p>
+                                </div>
+        
+                                <div class="parallax5"> 
+        <p><button style="height:50px;background-color:rgb(172, 122, 122);font-size:20px" type="button" onclick="alert('Nightlife. No kids allowed in Wellington pubs. Welly is known for its parties in the CBD.')">Wellington</button></p>
+        </div>
+        
+        <div class="parallax6">
+        <p><button style="height:50px;background-color:rgb(172, 122, 122);font-size:20px" type="button" onclick="alert('Must be something in the water here because a very bright man was born in Brightwater called:Lord Rutherford (the guy that split the atom). He is rightfully on the NZ hundred dollar bill, sometimes refered to as the Rutherford or redback') ">Brightwater Nelson</button></p>
+        </div>
+
+        
+        <div class="parallax7">
+        <p><button style="height:50px;background-color:rgb(172, 122, 122);font-size:20px" type="button" onclick="alert('Sunny Nelson -- Nelson is located in the center of NZ with a short walk to the summit. Also has a really nice beach you can not miss')">Nelson</button></p>
+        </div>
+
+        
+        <div class="parallax8">
+                <p><button style="height:50px;background-color:rgb(172, 122, 122);font-size:20px" type="button" onclick="alert('If you can, try travel down the West coast of the South Island, it is a very nice drive, and there is a historic place called shantytown, it hosts a steamtrain (with a built-in espresso machine), gold mining, and much more!')">Grey Mouth</button></p>
+                </div>
+
+                <div class="parallax9">
+                <p><button style="height:50px;background-color:rgb(172, 122, 122);font-size:20px" type="button" onclick="alert('Luuugeeee -- fun times what a thrill. Plus there is a park at the bottom with a tuatara (you will have to pay to see this still living dinosaur')">Queenstown</button></p>
+                </div>
+
+                 <div class="parallax10">
+                        <p><button style="height:50px;background-color:rgb(172, 122, 122);font-size:20px" type="button" onclick="alert('If you make it all the way down to Dunedin, you should be able to spot penquins at night or at least seals during the day.')">Dunedin</button></p>
+                    </div>
+         </div>
+    </section>
+ 
+      
+      <div class="e"><H1>Summary Table:</H1></div>
+
+      <div class="parallax11">
+         <p><button style="height:300px;background-color:rgb(218, 95, 95);font-size:70px" type="button" onclick="mytable()">OPEN FILE (click and scroll down to see more)</button></p>
+
+<table>
+        <script type="text/javascript"charset="utf-8"> 
+         function mytable() {
+              d3.text("Lukedata.csv", function(data) {
+                  var parsedCSV = d3.csv.parseRows(data);
+                  var container = d3.select("body")
+                      .append("table")
+                      .selectAll("tr")
+                          .data(parsedCSV).enter()
+                         .append("tr")
+                      .selectAll("td")
+                          .data(function(d) { return d; }).enter()
+                          .append("td")
+                          .text(function(d) { return d; });
+              });
+      }
+          </script>
+  </table>
+  </div>
+
+
+</body>
+
+
+
+
+ 
+
+
+<section id="searchBar">
+        <div class="container">
+            <h3>Search</h3>
+            <form>
+                <input type="email" placeholder="CTRL+f searches page ">
+                <button type="submit" class="button_1">Top of Page</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="searchBar">
+            <div class="container">
+                <h3>Search</h3>
+                <form>
+                    <input type="email" placeholder="CTRL+f searches page ">
+                    <button type="submit" class="button_1">Top of Page</button>
+                </form>
+            </div>
+        </section>
+
+</html>
+<footer>
+    </p><h6>Foxyflow's New Zealand Tourism locations, Copyright &copy; 2018</h6></p><img src="./images/foxylogo3.png"style="width:100px;height:px;">
+    
+</footer>
+
+
+
