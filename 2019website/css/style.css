@@ -1,0 +1,21 @@
+.grid 
+{
+display: grid;  
+border: 2px rgb(26, 66, 36) solid;
+width: 400px;
+height: 500px;
+grid-template: 2fr 2fr 2fr / 3fr 50% 1fr;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
